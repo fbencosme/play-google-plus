@@ -1,4 +1,44 @@
-This is your new Play 2.0 application
-=====================================
+#  play-google-plus 
 
-This file will be packaged with your application, when using `play dist`.
+Google+ and Play Framework quick integration.
+Play 2.0 is a high productivity Java and Scala Web application framework, integrating all components and API needed for modern Web application development. 
+
+It is based on a lightweight stateless Web friendly architecture and features predictable and minimal resources consumption (CPU, Memory, Threads) for highly scalable applications thanks to its reactive model based on Iteratee IO.
+
+http://www.playframework.org
+
+## Installing
+
+For convenience, you should add the framework installation directory to your system PATH. On UNIX systems will be something like:
+
+```bash
+  git clone https://github.com/fbencosme/play-google-plus.git
+  cd play-google-plus/g+
+  play publish-local
+```
+## Getting started
+
+Enter any existing Play 2.0 application directory and:
+
+```
+$ vim project/Build.scala
+```
+> add
+> val appDependencies = Seq(
+>    "g+" % "g+_2.9.1" % "1.0-SNAPSHOT")
+
+```
+
+## Running the sample applications
+
+```
+$ cd ~/workspace/play-google-plus/samples
+$ play run
+```
+> The application will be available on port 9000.
+
+
+## Contributors
+
+Check for all contributors at https://github.com/fbencosme/play-google-plus/graphs/contributors
+
