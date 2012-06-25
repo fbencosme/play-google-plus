@@ -20,8 +20,6 @@ $ vim project/Build.scala
 > val appDependencies = Seq(
 >    "g+" % "g+_2.9.1" % "1.0-SNAPSHOT")
 
-```
-
 ## Running the sample applications
 
 ```
