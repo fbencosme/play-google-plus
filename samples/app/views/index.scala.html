@@ -1,0 +1,11 @@
+@(message: String)
+
+@main("Welcome to Play 2.0") {
+     
+    @views.html.google.plusButton()
+    @views.html.google.plusButton("tall", "bubble")
+    @views.html.google.plusButton(width = 500)
+    @views.html.google.plusButton(annotation = "none")
+    @views.html.google.plusButton(lang = "zh-CN")
+    
+}
