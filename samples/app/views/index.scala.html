@@ -1,11 +1,38 @@
 @(message: String)
 
-@main("Welcome to Play 2.0") {
-     
-    @views.html.google.plusButton()
-    @views.html.google.plusButton("tall", "bubble")
-    @views.html.google.plusButton(width = 500)
-    @views.html.google.plusButton(annotation = "none")
-    @views.html.google.plusButton(lang = "zh-CN")
+@import models.google.plus._
+
+@main("G+ Examples") {
+     <link rel="canonical" href="http://localhost:9000">
+
+
+    <table style="text-align:center;">
+      <tr>
+         <th>+ Button</th>
+         <th>+ Share </th>
+         <th>+ Badge </th>
+      </tr>
+      <tr>
+         <td>@views.html.google.plus.button()</td>
+         <td>@views.html.google.plus.share()</td>
+         <td>@views.html.google.plus.badge()</td>
+      </tr>
+      <tr>
+         <td>@views.html.google.plus.button(size = Size.tall,annotation = Annotation.bubble)</td>
+         <td>@views.html.google.plus.share(size = Size.large)</td>
+         <td>@views.html.google.plus.badge(feature = Feature.small)</td>
+      </tr>
+      <tr>
+         <td>@views.html.google.plus.button(width = 500)</td>
+         <td></td><td></td>
+      </tr>
+      <tr>
+         <td> @views.html.google.plus.button(annotation = Annotation.none)</td>
+         <td></td><td></td>
+      </tr>
+    </table>     
+    <br/>
     
+    
+     
 }

@@ -1,17 +1,12 @@
-@(size: String = "medium",
-  annotation: String = "inline", 
-  lang : String = "en-US",
-  width: Int = 300)
+@(annotation: models.google.plus.Annotation.Value = models.google.plus.Annotation.inline,
+  size : models.google.plus.Size.Value = models.google.plus.Size.medium,
+  lang : String = "en-US")
 
-@import GooglePlus.isInline
-
-<!-- +1 button -->
-<div class = "g-plusone" 
-  data-size = "@size" 
-  data-annotation = "@annotation"
-  @if(isInline(annotation)) { 
-    data-width = "@width" 
-  } >
+<!-- share button -->
+<div class        = "g-plus"
+  data-action     = "share"
+  data-size       = "@size" 
+  data-annotation = "@annotation">
 </div>
 
 <script type="text/javascript">

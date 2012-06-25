@@ -1,0 +1,24 @@
+@(page: String = "",
+  feature: models.google.plus.Feature.Value = models.google.plus.Feature.icon, 
+  lang : String = "en-US")
+
+@if(models.google.plus.Feature.icon.equals(feature)) {
+  <a href="@page" rel="publisher" style="text-decoration:none;">
+  <img src="//ssl.gstatic.com/images/icons/gplus-32.png" alt="Google+" style="border:0;width:32px;height:32px;"/></a>
+} else {
+  <div class="g-plus" data-height="69" data-href="@page"></div>
+  <script type="text/javascript">
+    $(function() {
+      var po = document.createElement('script');
+      po.type = 'text/javascript';
+      po.async = true;
+      po.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(po, s);
+      window.___gcfg = {
+        lang : "@lang"
+      }
+    });
+  </script>
+  
+}
