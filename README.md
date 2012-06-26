@@ -28,7 +28,9 @@ $ play run
 ```
 > The application will be available on port 9000.
 
-
+## Demo
+ http://play-gplus-sample.herokuapp.com/
+ 
 ## Contributors
 
 Check for all contributors at https://github.com/fbencosme/play-google-plus/graphs/contributors

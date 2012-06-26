@@ -11,4 +11,5 @@ $ play run
 
 > The application will be available on port 9000.
 
-
+# Demo
+ http://play-gplus-sample.herokuapp.com/
